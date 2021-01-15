@@ -56,8 +56,8 @@ export function todoDelete(id) {
         });
 
         try {
-            const res = await fetch(endpoint+'/delete/'+id ,{method: 'DELETE', headers:{"Content-type":"application/json; charset=UTF-8"}} )
-            const data = await res.json();
+            // const res = await fetch(endpoint+'/delete/'+id ,{method: 'DELETE', headers:{"Content-type":"application/json; charset=UTF-8"}} )
+            // const data = await res.json();
             dispatch({
                 type: 'TODO_DELETE_SUCCESS',
                 payload: id
@@ -79,8 +79,8 @@ export function todoUpdate(id, todo_completed) {
         });
 
         try {
-            const res = await fetch(endpoint+'/update/'+id ,{method: 'POST', headers:{"Content-type":"application/json; charset=UTF-8"}} )
-            const data = await res.json();
+            // const res = await fetch(endpoint+'/update/'+id ,{method: 'POST', headers:{"Content-type":"application/json; charset=UTF-8"}} )
+            // const data = await res.json();
             dispatch({
                 type: 'TODO_UPDATE_SUCCESS',
                 payload: id,
