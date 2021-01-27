@@ -10,7 +10,7 @@ const List = () => {
     const dispatch = useDispatch();
     const todos = useSelector(selectTodos)
 
-    useEffect(() => {
+    React.useEffect(() => {
         dispatch(getTodos())
     }, [dispatch])
 

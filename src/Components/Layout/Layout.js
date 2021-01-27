@@ -16,7 +16,6 @@ const Layout = () => {
                     </Switch>
 
             <div className="list-button"><Link to="/list" style={{textDecoration:'none', color:'white', paddingLeft:10,  display:'block'}}>List</Link></div>
-            <div className="footer">by ozanaydin</div>
         </div>
     )
 };
