@@ -22,7 +22,7 @@ describe('<TodoList/>' , () => {
     beforeEach(() => {
         props = {
             todo_name: 'abc',
-            todo_completed: true ,  
+            todo_completed: true , 
             a_id: 1
         };
 

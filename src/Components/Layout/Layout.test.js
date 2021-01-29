@@ -3,10 +3,10 @@ import Enzyme, { shallow } from 'enzyme';
 import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
 
 describe('<Layout/>' , () => {
+    let wrapper;
     Enzyme.configure({ adapter: new Adapter() })
 
     beforeEach(() => {
-        let wrapper;
         wrapper = shallow(<Layout />)
     })
 

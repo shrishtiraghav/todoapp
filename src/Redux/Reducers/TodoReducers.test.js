@@ -4,7 +4,7 @@ import * as types from '../Actions/Actions'
 const initialState = {
     isLoading: false,
     error: null,
-    todos: [],
+    todos: []
 };
 
 describe('authenticate reducer', () => {
@@ -40,7 +40,13 @@ describe('authenticate reducer', () => {
   it('handles add todo request', () => {
     expect(reducer(initialState, { type: types.TODOS_ADD_SUCCESS })).toEqual({
       ...initialState,
-      isLoading: false
+      isLoading: false,
+      todos : [
+         {
+            "todo_completed": false,
+            "todo_name": undefined,
+           }
+           ]
     });
   });
   it('handles add todo request', () => {
